@@ -6,7 +6,7 @@ category:      Text, Web, JSON
 author:        Wire Swiss GmbH
 maintainer:    Wire Swiss GmbH <backend@wire.com>
 copyright:     (c) 2021 Wire Swiss GmbH
-license:       AGPL-3
+license:       BSD2
 license-file:  LICENSE
 build-type:    Simple
 
