@@ -18,9 +18,13 @@
 module Test.Data.Schema.Names where
 
 import Data.Schema hiding (getName)
-import Imports
 import Test.Tasty
 import Test.Tasty.HUnit
+
+-- TODO: Align these with other imports
+-- BEGIN: Imports module replacement
+import Data.Text (Text)
+-- END
 
 newtype UserId = UserId Text
   deriving (Eq, Show)

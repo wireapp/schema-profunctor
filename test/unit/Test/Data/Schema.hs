@@ -32,10 +32,19 @@ import Data.OpenApi.Declare qualified as S
 import Data.Proxy
 import Data.Schema hiding (getName)
 import Data.Text qualified as Text
-import Imports
 import Test.Data.Schema.Names
 import Test.Tasty
 import Test.Tasty.HUnit
+
+-- TODO: Align these with other imports
+-- BEGIN: Imports module replacement
+import Data.Text (Text)
+import Data.ByteString.Lazy qualified as LBS
+import Data.List (isInfixOf)
+import Data.Maybe
+
+type LByteString = LBS.ByteString
+-- END
 
 tests :: TestTree
 tests =

@@ -120,10 +120,24 @@ import Data.Text.Encoding qualified as T
 import Data.Text.Lazy qualified as TL
 import Data.Typeable (Proxy (..), typeRep)
 import Data.Vector qualified as V
-import Imports hiding (Product)
 import Numeric.Natural
 import Type.Reflection (SomeTypeRep (..), tyConModule, tyConName)
 import Type.Reflection qualified as TR
+
+-- TODO: Align these with other imports
+-- BEGIN: Imports module replacement
+import Control.Monad.Trans.Reader
+import Data.Text (Text)
+import Data.Typeable
+import Data.Set (Set)
+import Data.Int
+import Data.Map (Map)
+import Data.Word
+import GHC.Generics
+import Control.Monad
+import Data.List
+import Data.Maybe
+-- END
 
 type Declare = S.Declare (S.Definitions S.Schema)
 

@@ -17,7 +17,6 @@
 
 module Main where
 
-import Imports
 import Test.Data.Schema
 import Test.Tasty (defaultMain, testGroup)
 

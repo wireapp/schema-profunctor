@@ -38,7 +38,6 @@ library
     MultiParamTypeClasses
     MultiWayIf
     NamedFieldPuns
-    NoImplicitPrelude
     OverloadedRecordDot
     OverloadedStrings
     PackageImports
@@ -70,7 +69,6 @@ library
     , comonad
     , containers
     , hashable
-    , imports
     , lens
     , openapi3
     , profunctors
@@ -113,7 +111,6 @@ test-suite schemas-tests
     MultiParamTypeClasses
     MultiWayIf
     NamedFieldPuns
-    NoImplicitPrelude
     OverloadedRecordDot
     OverloadedStrings
     PackageImports
@@ -140,7 +137,7 @@ test-suite schemas-tests
       aeson
     , aeson-qq
     , base                       >=4 && <5
-    , imports
+    , bytestring
     , insert-ordered-containers
     , lens
     , openapi3
