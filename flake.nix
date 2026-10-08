@@ -12,15 +12,15 @@
         pkgs = import nixpkgs { inherit system; };
         haskellPackages = pkgs.haskellPackages.override {
           overrides = self: super: {
-            postgresql-connection-string =
+            schema-profunctor =
               super.callCabal2nix "schema-profunctor" ./. { };
           };
         };
       in {
-        packages.default = haskellPackages.postgresql-connection-string;
+        packages.default = haskellPackages.schema-profunctor;
 
         devShells.default = haskellPackages.shellFor {
-          packages = p: [ p.postgresql-connection-string ];
+          packages = p: [ p.schema-profunctor ];
           buildInputs = with haskellPackages; [
             cabal-install
             ghcid
