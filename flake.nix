@@ -30,5 +30,10 @@
           ];
           withHoogle = true;
         };
+
+        devShells.ci = haskellPackages.shellFor {
+          packages = p: [ p.schema-profunctor ];
+          buildInputs = [ haskellPackages.cabal-install ];
+        };
       });
 }
